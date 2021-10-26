@@ -13,7 +13,7 @@ ui.layout(
                 <linear gravity="center">
                     <button id="start" text="打卡" />
                 </linear>
-        
+
             </frame>
             <frame>
                 <linear gravity="center">
@@ -73,7 +73,7 @@ ui.start.on("click", () => {
     app.launchApp("企业微信")
     threads.start(function () {
         className("android.widget.RelativeLayout").clickable(true).depth(9).drawingOrder(3).findOne().click()
-        className("android.widget.RelativeLayout").clickable(true).depth(11).drawingOrder(8).findOne().click()
+        className("android.widget.RelativeLayout").clickable(true).depth(11).drawingOrder(6).findOne().click()
         sleep(1100)
         className("android.view.View").clickable(true).depth(13).drawingOrder(0).findOne().click()
         sleep(1100)
@@ -87,5 +87,5 @@ ui.start.on("click", () => {
         className("android.widget.CheckBox").clickable(true).depth(24).drawingOrder(0).id("V0_CTRL82").findOne().click() //确认框
         className("android.view.View").clickable(true).depth(18).drawingOrder(0).text("提交").findOne().click()
         exit()
-    } )
+    })
 })
