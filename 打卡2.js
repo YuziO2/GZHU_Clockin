@@ -73,7 +73,8 @@ ui.start.on("click", () => {
     app.launchApp("企业微信")
     threads.start(function () {
         className("android.widget.RelativeLayout").clickable(true).depth(9).drawingOrder(3).findOne().click()
-        className("android.widget.RelativeLayout").clickable(true).depth(11).drawingOrder(6).findOne().click()
+        className("android.widget.TextView").clickable(false).depth(13).text("健康信息系统").findOne().parent().parent().click()
+        //className("android.widget.RelativeLayout").clickable(true).depth(11).drawingOrder(6).findOne().click() 旧版选择“健康信息系统”语句
         sleep(1100)
         className("android.view.View").clickable(true).depth(13).drawingOrder(0).findOne().click()
         sleep(1100)
