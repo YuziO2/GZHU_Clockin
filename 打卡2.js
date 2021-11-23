@@ -87,6 +87,5 @@ ui.start.on("click", () => {
         sleep(500)
         className("android.widget.CheckBox").clickable(true).depth(24).drawingOrder(0).id("V0_CTRL82").findOne().click() //确认框
         className("android.view.View").clickable(true).depth(18).drawingOrder(0).text("提交").findOne().click()
-        exit()
     })
 })
