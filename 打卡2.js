@@ -17,7 +17,12 @@ ui.layout(
             </frame>
             <frame>
                 <linear gravity="center">
-                    <text text="打卡前请授予软件“无障碍”权限" textColor="red" textSize="20sp" />
+                    <text text="打卡前请授予软件“无障碍”权限" textColor="blue" textSize="20sp" />
+                </linear>
+            </frame>
+            <frame>
+                <linear gravity="center">
+                    <text text="华为用户请注意：请将软件锁定在后台，以免无障碍权限消失！" textColor="red" textSize="20sp" />
                 </linear>
             </frame>
         </vertical>
@@ -45,7 +50,7 @@ ui.emitter.on("options_item_selected", (e, item) => {
             toast("还没有设置");
             break;
         case "关于":
-            alert("关于", "GZHU自动打卡工具\nBy:Yuzi");
+            alert("关于", "GZHU自动打卡工具\nVer:2.1.2\nBy:Yuzi");
             break;
     }
     e.consumed = true;
