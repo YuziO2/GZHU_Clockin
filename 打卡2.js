@@ -77,20 +77,22 @@ ui.menu.on("item_click", item => {
 ui.start.on("click", () => {
     app.launchApp("企业微信")
     threads.start(function () {
-        className("android.widget.RelativeLayout").clickable(true).depth(9).drawingOrder(3).findOne().click()
+        className("android.widget.RelativeLayout").clickable(true).depth(9).drawingOrder(4).findOne().click()//工作台
         className("android.widget.TextView").clickable(false).depth(13).text("健康信息系统").findOne().parent().parent().click()
         //className("android.widget.RelativeLayout").clickable(true).depth(11).drawingOrder(6).findOne().click() 旧版选择“健康信息系统”语句
-        sleep(1100)
+        sleep(500)
         className("android.view.View").clickable(true).depth(13).drawingOrder(0).findOne().click()
-        sleep(1100)
+        sleep(500)
         className("android.view.View").clickable(true).depth(14).drawingOrder(0).findOne().click()
-        sleep(1100)
+        sleep(500)
         className("android.widget.RadioButton").clickable(true).depth(24).drawingOrder(0).id("V0_CTRL287").findOne().click()
         //className("android.widget.RadioButton").clickable(true).depth(24).drawingOrder(0).id("V0_CTRL294").findOne().click()
         className("android.widget.RadioButton").clickable(true).depth(24).drawingOrder(0).id("V0_CTRL175").findOne().click()
         className("android.widget.RadioButton").clickable(true).depth(24).drawingOrder(0).id("V0_CTRL176").findOne().click()
-        sleep(500)
+        className("android.widget.RadioButton").clickable(true).depth(24).drawingOrder(0).id("V0_CTRL254").findOne().click()//是否外出
+        sleep(100)
         className("android.widget.CheckBox").clickable(true).depth(24).drawingOrder(0).id("V0_CTRL82").findOne().click() //确认框
-        className("android.view.View").clickable(true).depth(18).drawingOrder(0).text("提交").findOne().click()
+        sleep(500)
+        className("android.widget.TextView").depth(18).drawingOrder(0).text("提交").findOne().parent().click()//提交按钮
     })
 })
